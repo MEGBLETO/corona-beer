@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+header{
+  padding: 10px;
+  display: flex;
+  height: 10vh;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.logo,
+.cart{
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  flex: 1;
+}
+
+.logo h4{
+  font-size: 2rem;
+  padding-left:5px;
+  font-family: 'Lily Script One', cursive;
+}
+
+
+.logo img{
+  height: 40px;
+}
+
+
+nav{
+  display: flex;
+  flex: 2;
+  align-items: center;
+}
+
+.nav-links{
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li a:nth-child(1){
+  color: yellow;
+}
+
+.nav-links li a{
+  margin: 2rem;
+  text-decoration: none;
+  color: black;
+
+}
+
+.cart{
+  flex: 1;
+  justify-content: flex-end;
+}
+
+
+
+.cart img{
+  height: 30px;
+}
+
+
+
+/*showcase*/
+
+.showcase{
+  height: 80vh;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.left-side{
+  flex: 1;
+}
+
+
+.right-side{
+  flex: 1;
+}
+
+
+.left-side p{
+  padding: 1rem;
+}
+
+
+.first{
+  background: transparent;
+  padding: 1rem 2rem;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.second{
+  background: rgb(243, 243, 10,0.8);
+  padding: 1rem 2rem;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+
+.right-side img{
+  filter: drop-shadow(10px 10px 10px black ) ;
+}
+
+
+/*Product section*/
+.product{
+padding: 2rem;
+height: 120vh;
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+margin-bottom: 3rem;
+
+}
+.product h1{
+  padding-bottom: 2rem;
+
+}
+
+.image1{
+  flex: 1 1 40rem;
+}
+
+
+.text,
+.text2{
+  flex: 1 1 40rem;
+}
+
+
+.corona-extra,
+.corona-light{
+  display: flex;
+  margin: 3rem 0.5rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.corona-extra p,
+.corona-light p{
+  font-weight: normal;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: black;
+  text-align: justify;
+}
+
+.text h1,
+.text2 h1{
+  color: darkblue;
+
+}
+
+
+
+.corona-light img{
+  height: 270px;
+  
+}
+
+/*about corona*/
+.about{
+  position: relative;
+  height: 30vh;
+  background: url(../img/about.jpg)  center center/cover; 
+
+}
+
+.histoire{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(251, 254, 255, 0.5);
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+.histoire h1{
+  color: darkblue;
+}
+
+
+.histoire p{
+  padding: 1rem;
+  text-align: justify;
+  font-size: larger;
+  width: 1000px;
+}
+
+/*footer*/
+
+footer{
+  background-color: #d3d3d3;
+  color: #d3d3d33b;
+  height: 20vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.arrow{
+  background-color: darkgray;
+  width: 100px;
+  height: 100%;
+  padding: 2rem;
+}
+
+
+.arrow img{
+  height: 50px;
+  cursor: pointer;
+  transform: .2s ease-in;
+}
+
+.arrow img:hover{
+  transform: scale(0.9);
+}
+
+.footer-links{
+  display: flex;
+  flex: 2;
+  list-style: none;
+}
+
+.footer-links li{
+  width: 100%;
+}
+
+.footer-links a {
+  font-weight: bold;
+  color: rgb(90, 82, 82);
+
+  text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 800px){
+  .product{
+    height: 200vh;
+  }
+  header{
+    width: 100%;
+  }
+  .first{
+    margin-bottom: 1rem;
+  }
+
+  footer{
+    flex-wrap: wrap;
+  }
+
+.arrow{
+  width: 50px;
+}
+  .arrow img{
+    height: 30px;
+  }
+
+  .about{
+    height: 80vh;
+  }
+
+  
+}
+
+@media screen and (max-width: 900px){
+
+  .product{
+    height: 300vh;
+  }
+
+
+  .histoire p{
+    width: 500px;
+  }
+  
+  .product{
+    height: 170vh;
+  }
+
+  .corona-light,
+  .corona-extra{
+    flex-wrap: wrap;
+  }
+
+  .arrow{
+    transform: translateX(-10px);
+    width: 100px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 500px){
+  header{
+    width: 100%;
+    height: 15vh;
+    flex-wrap: wrap;
+  }
+
+  .logo{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 15px;
+    
+  }
+  .right-side img{
+    height: 300px;
+  }
+
+  .nav-links a{
+    margin: .8rem;
+  }
+
+  .cart img{
+    height: 18px;
+  }
+  .first{
+    margin-bottom: 1rem;
+  }
+  .histoire p{
+    width: 300px;
+  }
+
+  .about{
+    height: 70vh;
+  }
+
+  .product{
+    flex-wrap: wrap;
+    height: 300vh;
+  }
+
+  .footer-links{
+    flex-wrap: wrap;
+  }
+  
+  .corona-light,
+  .corona-extra{
+    flex-wrap: wrap;
+  }
+  .arrow{
+    transform: translateX(-50px);
+    width: 100px;
+  }
+
+
+}
+
+@media screen and (max-width: 548px){
+  .product{
+    height: 300vh;
+  }
+
+
+}
+
+
+@media screen and (max-width: 375px){
+
+  .corona-light{
+    padding-bottom: 3rem;
+  }
+  .corona-light img,
+  .corona-extra img{
+    height: 200px;
+  }
+
+  .about{
+    height: 100vh;
+  }
+
+  
+
+  .histoire p{
+
+  width: 300px;
+
+  }
+
+  .arrow{
+    padding: 0.9rem;
+    opacity: 0.3;
+    
+  }
+
+  .product{
+    margin-top: 50%;
+    height: 150vh;
+    flex-wrap: wrap;
+  }
+
+  header{
+    width: 100%;
+  }
+
+  .right-side img{
+    height: 300px;
+  }
+
+  .nav-links a{
+    margin: 0 0.5rem;
+  }
+
+  .cart img{
+    transform: translateY(-20px);
+    height: 15px;
+  }
+
+  .first{
+    margin-bottom: 1rem;
+  }
+
+  .corona-light,
+  .corona-extra{
+    flex-wrap: wrap;
+  }
+
+  
+  .histoire p{
+    width: 250px;
+  }
+
+}
+
+
+@media screen and (max-width: 411px){
+  .product{
+    height: 300vh;
+    flex-wrap: wrap;
+  }
+
+  .arrow{
+    transform: translateX(-50px);
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .product{
+    height: 400vh;
+    flex-wrap: wrap;
+  }
+
+  .arrow{
+    transform: translateX(-10px);
+    width: 100px;
+  }
+}
